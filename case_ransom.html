@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us" xmlns:fb="http://ogp.me/ns/fb#">
+	<head>
+		<meta name="description" content="Billy Fagan arrives at the designated spot to deliver the ransom to free his kidnapped wife. Suddenly Billy is hit from behind and the ransom is stolen. Who is the guilty one?" />
+		<meta charset="UTF-8" />
+		<title>
+			2 Minute Mysteries - Ransom
+		</title>
+		<link rel="stylesheet" href="css/global.css" />
+		<link rel="stylesheet" href="css/secondary.css" />
+		<link rel="stylesheet" href="css/jplayer.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.jplayer.min.js"></script>
+		<script src="js/global.js"></script>
+		<script src="js/video.js"></script>
+		<script>
+			var checker = [2,2];
+			var wcase = "Ransom";
+		</script>
+		<script src="http://connect.facebook.net/en_US/all.js"></script>
+	</head>
+	<body>
+	    <div id="fb-root"></div>
+	    <script>
+      // assume we are already logged in
+      FB.init({appId: '74230423838', xfbml: true, cookie: true});
+      var postToFeed = function () {
+	         // calling the API ...
+        var obj = {
+          method: 'feed',
+          link: 'http://2minutemysteries.com',
+          picture: 'http://2minutemysteries.com/images/logimage.png',
+          name: '2 Minute Mysteries',
+          caption: '2 Minute Mysteries',
+          description: 'I just scored ' + pointTotal + ' points for solving http://www.2MinuteMysteries.com – Ransom. Can you beat it?'
+        };
+
+        function callback(response) {
+          document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+        }
+
+        FB.ui(obj, callback);
+        return false;
+	   };
+     	</script>
+		<div id="rightImageBlock">
+			<div id="wrapForImage">
+				<div id="wordLogo">2 Minute Mysteries</div>
+				<div id="episodeViewer">
+					<a href="episodelist.html">Click here to view episodes</a>
+				</div>
+				<div class="content" id="epListContent">
+					<p>
+						<span class="episodeTitle">Ransom</span> - 
+						Billy Fagan arrives at the designated spot to deliver the ransom to free his kidnapped wife.  Suddenly Billy is hit from behind and the ransom is stolen.  Who is the guilty one?
+					</p>
+					<div id="videoBox">
+						<div id="videoPlayer" class="ransomintro"></div>
+						<div id="videoControls">
+							<div class="videoPlay vcon">play</div>
+							<div class="videoSeek">
+								<div class="playSeek"></div>
+							</div>
+							<div class="volumeImage"></div>
+							<div class="videoVolume">
+								<div class="modVolume"></div>
+							</div>
+						</div>
+						<div id="choiceBox">
+							<p id="choiceSolve">Click here to <span class="special">Solve</span> - the faster you solve it, the more points can be earned. A countdown timer begins once you click on solve.</p>
+							<p id="choiceReplay">Click here to <span class="special">Replay</span> the introduction video
+						</div>
+						<div id="quizBox">
+							<div id="pointCounter">1,000 points</div>
+							<div id="quiz">
+								<span class="question">Who is the guilty one?</span>
+									<ul id="question1">
+										<li id="answer__TimSanders">Tim Sanders</li>
+										<li id="answer__RickWells">Rick Wells</li>
+										<li id="answer__BillyFagan">Billy Fagan</li>
+									</ul>
+								<span class="question">What is the keyword to prove your theory?</span>
+									<ul id="question2">
+										<li id="answer__Dufflebag">Duffle bag</li>
+										<li id="answer__Gun">Gun</li>
+										<li id="answer__Coat">Coat</li>
+										<li id="answer__Switchblade">Switchblade</li>
+										<li id="answer__Alley">Alley</li>
+										<li id="answer__Watch">Watch</li>
+										<li id="answer__Headwound">Head wound</li>
+									</ul>
+							</div>
+							<div class="aHolder">
+								<span class="error"></span>
+								<a href="#" id="submitQuiz" class="button">Submit</a>
+							</div>
+						</div>
+						<div id="endingBox">
+							<div id="pointsText">You earned <span id="pointNumber">0</span> points for solving this episode.</div>
+							<div id="socialText">Click to post your score on: </div>
+							<div class="fbPost endPost"><img src="images/facebookh.gif" /> Facebook</div>
+							<a href="https://twitter.com/share" class="twitter-share-button twPost endPost" data-url="http://2minutemysteries.com" data-text="I just scored 875 points for solving 2MinuteMysteries.com – Ransom. Can you beat it?" data-count="none"><img src="images/twitterh.gif" /> Twitter</a>
+						</div>
+
+					</div>
+					<div id="hint">
+						<span class="revealer">CLUE</span>
+						<span class="revealed">What reporting details are inconsistent with the point of view of the alleged assault?</span>
+					</div>
+				</div>
+				<div id="paypalSection">
+					<p>
+					Help us raise funds to produce 30+ episodes with higher production values for multiple formats. Contact <a href="http://www.youtube.com/watch?v=8GPQ3c6TbXA" target="_blank">http://www.youtube.com/watch?v=8GPQ3c6TbXA</a> (email:  <a href="mailto:rory@mysteryatmansfieldmanor.com">rory [at] mysteryatmansfieldmanor [dot] com</a>)
+					</p>
+					<form id="paypalButton" action="https://www.paypal.com/cgi-bin/webscr" method="post"> 
+						<input type="hidden" name="cmd" value="_s-xclick" /> 
+						<input type="hidden" name="hosted_button_id" value="3PLXL78R3364J" /> 
+						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" /> 
+						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" /> 
+					</form> 
+				</div>
+				<div id="featureSection">
+					<a href="http://www.mysteryatmansfieldmanor.com/" target="_blank">Click here to play a feature length interactive murder mystery movie</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

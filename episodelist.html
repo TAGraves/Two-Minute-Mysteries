@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us" xmlns:fb="http://ogp.me/ns/fb#">
+	<head>
+		<meta name="description" content="2 Minute Mysteries is a series of short interactive mysteries in which you take on the role of the detectives and attempt to solve the crimes." />
+		<meta charset="UTF-8" />
+		<title>
+			2 Minute Mysteries - Episode List
+		</title>
+		<link rel="stylesheet" href="css/global.css" />
+		<link rel="stylesheet" href="css/secondary.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/global.js"></script>
+	</head>
+	<body>
+	<div id="fb-root"></div>
+	<script>
+	  window.fbAsyncInit = function() {
+	  		if (readLikeCookie() === null) {
+
+    FB.init({
+      appId      : '74230423838', // App ID
+      channelUrl : '//2minutemysteries.com/channel.php', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true,  // parse XFBML
+      oauth      : true
+    });
+    $("#facebookInfo").show();
+FB.getLoginStatus(function(response) {
+  if (response.status === 'connected') {
+    // the user is logged in and connected to your
+    // app, and response.authResponse supplies
+    // the user's ID, a valid access token, a signed
+    // request, and the time the access token 
+    // and signed request each expire
+    var uid = response.authResponse.userID;
+    var accessToken = response.authResponse.accessToken;
+    FB.api('/me/likes', function (like_response) {
+    	$.each(like_response.data, function (i) {
+    		if (like_response.data[i].id === "234395586642780") {
+    			subscription();
+    			createLikeCookie();
+    		}
+    	});
+    });
+  } else if (response.status === 'not_authorized') {
+    // the user is logged in to Facebook, 
+    //but not connected to the app
+    prepareSubscription();
+
+  } else {
+    prepareSubscription();
+  }
+ });
+ FB.Event.subscribe('edge.create',
+    function() {
+        subscription();
+        createLikeCookie();
+    }
+);
+
+    // Additional initialization code here
+  } else {
+  	subscription();
+  }
+};
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     d.getElementsByTagName('head')[0].appendChild(js);
+   }(document));
+
+
+	</script>
+		<div id="rightImageBlock">
+			<div id="wrapForImage">
+				<div id="wordLogo">2 Minute Mysteries</div>
+				<div id="episodeViewer">
+					<a href="episodelist.html">Click here to view episodes</a>
+				</div>
+				<div class="content" id="epListContent">
+					<h2>Episode List</h2>
+					<p>
+						<a href="case_bankrobber.html" class="episodeTitle">The Bank Robber</a> - 
+						Roger Stevens, the infamous bank robber is found dead in his hotel room from a gunshot to the side of his head. Was it a suicide?
+					</p>
+					<div id="facebookInfo">
+						<p class="facebookLikeRequired">
+							In order to view the last two episodes, you must like us on Facebook! <a href="#" id="facebookConfirmer">(Click here if you already liked us.)</a></p>
+	 <fb:like href="http://www.facebook.com/pages/2-Minute-Mysteries/234395586642780" send="false" width="300" show_faces="false" colorscheme="dark" font="arial"></fb:like>
+	 					</p>
+					</div>
+					<p>
+						<span id="case_ransom.html" class="episodeTitle locked">Ransom</span> - 
+						Billy Fagan arrives at the designated spot to deliver the ransom to free his kidnapped wife. Suddenly Billy is hit from behind and the ransom is stolen. Who is the guilty one?
+					</p>
+					<p>
+						<span id="case_witnessormurderer.html" class="episodeTitle locked">Witness or Murderer</span> - 
+						Detective Richards interrogates Kelly Saunders at her hotel room where a murder occurred across the hall. Is she a witness or a murderer?
+					</p>
+
+				</div>
+				<div id="paypalSection">
+					<p>
+					Help us raise funds to produce 30+ episodes with higher production values for multiple formats. Contact <a href="http://www.youtube.com/watch?v=8GPQ3c6TbXA" target="_blank">http://www.youtube.com/watch?v=8GPQ3c6TbXA</a> (email:  <a href="mailto:rory@mysteryatmansfieldmanor.com">rory [at] mysteryatmansfieldmanor [dot] com</a>)
+					</p>
+					<form id="paypalButton" action="https://www.paypal.com/cgi-bin/webscr" method="post"> 
+						<input type="hidden" name="cmd" value="_s-xclick" /> 
+						<input type="hidden" name="hosted_button_id" value="3PLXL78R3364J" /> 
+						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" /> 
+						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" /> 
+					</form> 
+				</div>
+				<div id="featureSection">
+					<a href="http://www.mysteryatmansfieldmanor.com/" target="_blank">Click here to play a feature length interactive murder mystery movie</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

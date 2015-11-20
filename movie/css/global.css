@@ -1,0 +1,147 @@
+body {
+	background: #fff;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 62.5%;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	background: #000;
+
+}
+
+#wrap {
+	background: #000;
+	width: 100%;
+	height: 100%;
+}
+
+#logo {
+	font-size: 2.4em;
+	color: red;
+}
+
+a.button {
+	background: #fff;
+	font-size: 1.6em;
+	font-weight: bold;
+	color: #000 !important;
+	padding: .5em 2em;
+	text-decoration: none;
+}
+
+a.button:hover {
+	background: #999;
+}
+
+#showtime_selection h2 {
+	color: #fff;
+	font-size: 2.4em;
+	font-weight: bold;
+}
+
+a.showtime {
+	color: #fff;
+	font-size: 1.6em;
+	text-decoration: none;	
+	border: 1px solid #666;
+	padding: .5em;
+	display: block;
+
+}
+
+a.selected {
+	color: #000;
+	background: #666;
+}
+
+#showtimes {
+	border: 1px solid #666;
+	padding: 1em 0px;
+	margin-bottom: 2em;
+}
+
+.waiting {
+	margin-top: 1em;
+	color: #fff;
+	font-size: 2.4em;
+	font-weight: bold;
+	display: none;
+}
+
+#waiting_for_film {
+	display: block;
+}
+
+.quizBox {	
+	border: 1px solid #ccc;
+	position: relative;
+	background: #000;
+	font-size: 2em;
+	color: #ccc;
+	display: none;
+}
+
+.quiz {
+	position: relative;
+	top: -15px;
+}
+
+.quizBox .aHolder {
+	position: absolute;
+	bottom: 25px;
+	right: 25px;
+}
+
+.quizBox a {
+	font-size: 1em;
+	color: #ccc;
+}
+
+.question {
+	text-decoration: underline;
+}
+
+.error {
+	font-size: .8em;
+}
+
+li {
+	cursor: pointer;
+	padding: 0px none;
+	margin: 0px none;
+}
+
+li:hover {
+	color: #fff;
+}
+
+li.selected {
+	color: #fff;
+	font-weight: bold;
+}
+
+#hint {
+	display: none;
+	position: absolute;
+	right: 0px;
+	top: 80px;
+	width: 110px;
+	background: #ccc;
+	color: #000;
+	text-align: center;
+	padding: 5px;
+
+}
+
+.revealer {
+	cursor: pointer;
+	border-bottom: 1px solid #000;
+}
+
+.revealed {
+	position: absolute;
+	bottom: 0px;
+	left: 10px;
+	display: none;
+}
+

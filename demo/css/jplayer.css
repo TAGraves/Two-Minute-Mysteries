@@ -1,0 +1,211 @@
+#epListContent {
+	position: relative;
+}
+
+#videoBox {
+	margin: 0 auto;	
+	border: 1px solid #ccc;
+	width: 480px;
+	background: #000 url(../../images/vidload.png) no-repeat;
+}
+
+
+#videoPlayer {
+	cursor: pointer;
+	margin: 0 auto;
+	padding: 35px 0;
+}
+
+.readyToPlay {
+	background: #000 url(../../images/vidplay.png) !important;
+}
+
+#videoControls {
+display: none !important;
+	margin: 0 auto;
+	width: 470px;
+	position: relative;
+	height: 40px;
+	padding: 5px;
+	border-top: 1px solid #ccc;
+}
+
+.videoPlay {
+	background: url("../../images/jplayer.blue.monday.jpg") 0 0 no-repeat;
+}
+
+.videoPlay:hover {
+	background: url("../../images/jplayer.blue.monday.jpg") -41px 0 no-repeat;
+}
+
+.videoIsPlaying {
+	background: url("../../images/jplayer.blue.monday.jpg") 0 -42px no-repeat;
+}
+
+.videoIsPlaying:hover {
+	background: url("../../images/jplayer.blue.monday.jpg") -41px -42px no-repeat;
+}
+
+.vcon {
+	cursor: pointer;
+	float: left;
+	width: 40px;
+	height: 40px;
+	text-indent: -9999px;
+}
+
+.videoSeek {
+	cursor: pointer;
+	margin: 16px 0 0 15px;
+	float: left;
+	width: 300px !important;
+	height: 8px;
+	background: #ccc;
+}
+
+.playSeek {
+	height: 8px;
+	background: #ff0000;
+}
+
+.videoVolume {
+	cursor: pointer;
+	margin: 16px 0 0 0;
+	width: 60px;
+	height: 8px;
+	background: #ccc;
+	float: left;
+}
+
+.modVolume {
+	height: 8px;
+	background: #ff0000;
+}
+
+.volumeImage {
+	margin: 13px 0 0 15px;
+	width: 18px;
+	height: 15px;
+	float: left;
+	background: url("../../images/jplayer.blue.monday.jpg") 0 -170px no-repeat;
+}
+
+#choiceBox {
+	background: #000;
+	width: 380px;
+	height: 271px;
+	padding: 50px;
+	display: none;
+}
+
+#choiceBox p {
+	font-size: 20px;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+#choiceBox p .special {
+	color: #ff0000;
+}
+
+#endingBox {
+	padding: 100px 0 0 30px;
+	background: #000;
+	width: 450px;
+	height: 271px;
+	font-size: 1.2em;
+	display: none;
+}
+
+#quizBox {
+	position: relative;
+	padding: 30px 0 0 30px;
+	background: #000;
+	width: 450px;
+	height: 341px;
+	display: none;
+	font-size: 16px;
+}
+
+#quiz {
+	position: relative;
+	top: -15px;
+}
+
+#quizBox .aHolder {
+	position: absolute;
+	bottom: 25px;
+	right: 25px;
+}
+
+#pointCounter {
+	padding: 3px;
+	border: 1px solid #ccc;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+#quizBox a {
+	font-size: 1em;
+	color: #000;
+}
+
+.question {
+	text-decoration: underline;
+}
+
+.error {
+	font-size: .8em;
+}
+
+li {
+	cursor: pointer;
+	padding: 0px none;
+	margin: 0px none;
+}
+
+li:hover {
+	color: #ccc;
+}
+
+li.selected {
+	color: #ff0000;
+}
+
+#hint {
+	display: none;
+	position: absolute;
+	right: 0px;
+	top: 80px;
+	width: 110px;
+	background: #ccc;
+	color: #000;
+	text-align: center;
+	padding: 5px;
+
+}
+
+.revealer {
+	cursor: pointer;
+	border-bottom: 1px solid #000;
+}
+
+.revealed {
+	display: none;
+}
+
+.endPost {
+	cursor: pointer;
+	margin-top: 10px;
+	display: block;
+}
+
+.endPost:hover {
+	color: #ccc;
+}
+
+#pointsText {
+	margin-bottom: 10px;
+}
+

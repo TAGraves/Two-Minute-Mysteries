@@ -17,6 +17,12 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+#Videos Folders
+videos/
+
+#Admin Password
+admin/admin.php
+
 # =========================
 # Operating System Files
 # =========================

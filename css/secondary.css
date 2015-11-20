@@ -1,0 +1,75 @@
+#epListContent {
+	padding-bottom: 2em;
+} 
+#facebookInfo {
+	display: none;
+}
+
+#episodeViewer {
+	text-align: center;
+	padding: 1em 0;
+	width: 100%;
+}
+
+.content, #episodeViewer {
+	font-size: 1.8em;
+	border-bottom: 1px solid #ccc;
+}
+
+.content p {
+	font-size: 16px;
+}
+
+h2 {
+	text-align: center;
+}
+
+.unlocked, .episodeTitle, h2, #episodeViewer a {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #fff;
+}
+
+a:hover {
+	color: #ccc !important;
+}
+
+.facebookLikeRequired {
+	color: #ccc;
+}
+
+.locked {
+	color: #ccc;
+	text-decoration: none;
+}
+
+.unlocked:hover {
+	color: #ccc !important;
+}
+
+#paypalSection {
+	padding: 1em 0;
+	clear: both;
+	border-bottom: 1px solid #ccc;
+}
+
+#paypalSection, #paypalSection a {
+	color: #fff;
+	font-size: 14px;
+}
+
+#paypalSection p {
+	width: 80%;
+	float: left;
+	margin-top: 0;
+}
+
+#featureSection {
+	text-align: center;
+	margin-top: 1em;
+}
+
+#featureSection a {
+	font-size: 1.8em;
+	color: #ae0000;
+}

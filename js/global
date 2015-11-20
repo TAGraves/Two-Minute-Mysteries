@@ -1,0 +1,5 @@
+$(function () {
+	$("#wordLogo").click(function () {
+		window.location.href = "http://2minutemysteries.com";
+	});
+});
